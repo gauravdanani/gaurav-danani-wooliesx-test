@@ -14,6 +14,6 @@ namespace Gaurav.Danani.WooliesX.Infrastructure.Proxies.WooliesXDevApi
         Task<IEnumerable<ShoppingHistoryDto>> GetShopperHistoryAsync([Query] string token);
 
         [Post("/api/resource/trolleyCalculator")]
-        Task<double> GetTrolleyTotalAsync([Query] string token, [Body] GetTrolleyTotalDto getTrolleyTotalDto);
+        Task<decimal> GetTrolleyTotalAsync([Query] string token, [Body] GetTrolleyTotalDto getTrolleyTotalDto);
     }
 }

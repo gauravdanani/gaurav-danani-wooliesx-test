@@ -5,6 +5,6 @@ namespace Gaurav.Danani.WooliesX.Application.Common.Interfaces
 {
     public interface ITrolleyService
     {
-        Task<double> GetTrolleyTotal(TrolleyTotalRequest trolleyTotalRequest);
+        Task<decimal> GetTrolleyTotal(TrolleyTotalRequest trolleyTotalRequest);
     }
 }

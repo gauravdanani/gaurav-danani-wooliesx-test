@@ -32,7 +32,7 @@ namespace Gaurav.Danani.WooliesX.ServiceHost.Controllers
         [Route("trolleyTotal")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<double>> TrolleyTotal([FromBody] TrolleyTotalRequest request)
+        public async Task<ActionResult<decimal>> TrolleyTotal([FromBody] TrolleyTotalRequest request)
         {
             try
             {

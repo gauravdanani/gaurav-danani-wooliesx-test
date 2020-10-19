@@ -6,7 +6,7 @@ using MediatR;
 
 namespace Gaurav.Danani.WooliesX.Application.Trolleys.Queries.GetTrolleyTotal
 {
-    public class GetTrolleyTotalQueryHandler : IRequestHandler<GetTrolleyTotalQuery, double>
+    public class GetTrolleyTotalQueryHandler : IRequestHandler<GetTrolleyTotalQuery, decimal>
     {
         private readonly ITrolleyService _trolleyService;
 
@@ -15,7 +15,7 @@ namespace Gaurav.Danani.WooliesX.Application.Trolleys.Queries.GetTrolleyTotal
             _trolleyService = trolleyService;
         }
         
-        public async Task<double> Handle(GetTrolleyTotalQuery request, CancellationToken cancellationToken)
+        public async Task<decimal> Handle(GetTrolleyTotalQuery request, CancellationToken cancellationToken)
         {
             return  await _trolleyService.GetTrolleyTotal(request.Trolley);
         }

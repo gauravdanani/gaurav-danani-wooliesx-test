@@ -28,7 +28,7 @@ namespace Gaurav.Danani.WooliesX.Infrastructure.Services
             _token = appSettingsProvider.AppSettings.Proxies.WooliesXDevApi.Token;
         }
         
-        public async Task<double> GetTrolleyTotal(TrolleyTotalRequest trolleyTotalRequest)
+        public async Task<decimal> GetTrolleyTotal(TrolleyTotalRequest trolleyTotalRequest)
         {
             try
             {
